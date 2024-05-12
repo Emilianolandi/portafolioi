@@ -1,5 +1,7 @@
+'use client'
 
-import { Link } from "lucide-react"
+
+
 import MotionTransition from "./transition-component"
 import { socialNetworks } from "@/data"
 

@@ -1,10 +1,14 @@
+// @useClient
+import React, { useRef } from 'react';
+
+
 import type { Metadata } from "next";
-import {  Urbanist} from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/navbar";
 import Header from "@/component/header";
 
-const urbanist = Urbanist ({ subsets: ["latin"] });
+const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mi Portfolio 👨‍🏫:)",
@@ -18,12 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>
-        
-      <Navbar/>
-      
+      <head>
+        <style>
+          {`
+            /* Aplica la fuente Urbanist a todo el documento */
+            body {
+              font-family: ${urbanist.className};
+            }
+          `}
+        </style>
+      </head>
+      <body>
+        <Navbar />
         {children}
-      <Header />
+        <Header />
       </body>
     </html>
   );

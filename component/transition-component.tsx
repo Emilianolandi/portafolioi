@@ -10,7 +10,7 @@ interface MotionTransitionProps{
     position: 'right'|'bottom';
 };
 const MotionTransition = (props:MotionTransitionProps) =>{
-   const {children,  className,position } = props
+   const {children,className,position } = props
     return(
         <motion.div
         variants ={fadeIn (position)}

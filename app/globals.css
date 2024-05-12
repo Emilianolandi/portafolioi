@@ -13,9 +13,7 @@ main{
   height: 100dvh;
 }
  
- .titulo h1{
-color: #e61111;
-}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

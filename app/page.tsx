@@ -1,7 +1,8 @@
+
 import CoverParticles from "@/component/cover-particles";
-import Header from "@/component/header";
+
 import Introduction from "@/component/introduccion";
-import Navbar from "@/component/navbar";
+
 import TransitionPage from "@/component/transition-pages";
 
 export default function Home (){
