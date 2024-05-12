@@ -28,7 +28,8 @@ export const socialNetworks = [
     },
 ];
 
-
+//aca tenemos el array de nuestra navegacion 
+//con un un id unico, su titulo, su icono y la ruta correspondiente 
 export const itemsNavbar = [
     {
         id: 1,
