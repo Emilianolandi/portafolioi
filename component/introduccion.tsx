@@ -21,13 +21,13 @@ const Introduction = () =>{
           <TypeAnimation
             sequence={[
               'puedes programarlo',
-              80,
-              'puedes optimizarlo',
               800,
+              'puedes optimizarlo',
+              1080,
               'puedes implementarlo',
-              2000,
+              2300,
               'puedes desarrollarlo',
-             9000
+             7000
             ]}
             wrapper="span"
             speed={70}

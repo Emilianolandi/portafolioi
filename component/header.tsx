@@ -24,7 +24,7 @@ const Header = () => {
                    </h1>
                 </a>
             <br />
-<div className=" flex items-center justify-center a-center gap-7">
+            <div className="flex justify-center gap-7">
     {socialNetworks.map(({logo, src, id})=>(
     <a key={id}
     href={src}
