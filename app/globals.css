@@ -43,7 +43,7 @@ main{
 /* Estilos para el título */
 .Datos  {
  display: flex;
-  margin: 5rem; /* Resetear márgenes */
+  margin: 2rem; /* Resetear márgenes */
   font-size: 3rem; /* Tamaño del título */
   font-family:'Courier New', Courier, monospace;
   font-weight:lighter;
