@@ -12,7 +12,73 @@ main{
   height: 100vh;
   height: 100dvh;
 }
+/* Estilos para el contenedor Estructura */
+/* Estilos para el contenedor Datos */
+/* Estilos para el contenedor Datos */
+/* Estilos para el contenedor Informacion */
+/* Estilos para el contenedor Informacion */
+/* Estilos para MotionTransition */
+/* Estilos para MotionTransition */
+.motion-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 40;
+    
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
 
+/* Estilos para container */
+.container {
+  max-width: 72rem; /* Equivalente a max-w-6xl en Tailwind CSS */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem; /* Añadir espacio alrededor del contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+/* Estilos para el título */
+.Datos  {
+ display: flex;
+  margin: 5rem; /* Resetear márgenes */
+  font-size: 3rem; /* Tamaño del título */
+  font-family:'Courier New', Courier, monospace;
+  font-weight:lighter;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+ .Datos h1{
+      text-align: left; /* Alinear a la izquierda en pantallas grandes */
+     
+  }
+}
+
+/* Estilos para el span dentro del título */
+h1 .text-secondary {
+  color: #f5f7f7; /* Color secundario */
+}
+
+/* Estilos para el contenedor de los íconos */
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem; /* Espacio entre íconos */
+}
+
+.icons-container a {
+  transition: all 0.3s ease; /* Transición en hover */
+}
+
+.icons-container a:hover {
+  color: #6932ec; /* Cambio de color en hover */
+}
+.Texto-inicio{
+  color: #c1abf2;
+}
 /* aca tenemos los estilos de la navegacion   */
 .Caja-nav {
   padding-left: 0.75rem; /* px-3 */
@@ -52,6 +118,21 @@ main{
 
 }
 /* ////////////////////// fin de la navegacion ////////////////////////// */ 
+
+/*///////////////////// CONTENIDO INICIO///////////////// */
+
+.Texto-inicio {
+  margin-bottom: 1.25rem; /* mb-5 */
+  font-size: 2rem; /* text-9xl */
+}
+
+@media (min-width: 768px) {
+  .texto-inicio {
+      font-size: 5rem; /* md:text-7xl */
+      margin-bottom: 5rem; /* md:mb-20 */
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

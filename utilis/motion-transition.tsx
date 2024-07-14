@@ -1,6 +1,6 @@
 export const transitionVariantsPage = {
     initial : {
-        x: '100%' ,
+        x: "100%" ,
         width: '100%'
     },
     animate :{
@@ -26,8 +26,8 @@ export const fadeIn = (position: string) => {
             }
         },
         hidden: {
-            y: position == 'bottom' ? -80 :0,
-            x: position == 'ringt' ? 80 : 0,
+            y: position === 'bottom' ? -80 :0,
+            x: position === 'ringt' ? 80 : 0,
             opacity: 0,
             transition:{
                 type: 'tween',
