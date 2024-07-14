@@ -86,8 +86,8 @@ main{
 }
 @media (min-width: 400px) {
   .Texto-inicio {
-      font-size: 2rem; /* Tamaño del texto en pantallas grandes */
-      margin-bottom: 2rem; /* Espacio inferior en pantallas grandes */
+      font-size: 1rem; /* Tamaño del texto en pantallas grandes */
+      margin-bottom: 1rem; /* Espacio inferior en pantallas grandes */
       text-align: left; /* Alinear a la izquierda en pantallas grandes */
   }
 }
