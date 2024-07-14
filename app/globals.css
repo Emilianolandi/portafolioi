@@ -64,7 +64,7 @@ main{
 }
 /* Estilos para el span dentro del título */
 .Texto-inicio .text-secondary {
-  color: #0be7e7; /* Color secundario */
+  color: #e7800b; /* Color secundario */
 }
 
 /* Estilos para el contenedor de los íconos */
@@ -91,6 +91,62 @@ main{
       text-align: left; /* Alinear a la izquierda en pantallas grandes */
   }
 }
+.Impresion {
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem; /* 8px */
+  font-size: 1rem; /* 20px */
+}
+
+@media (min-width: 768px) {
+  .Impresion {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1rem; /* 32px */
+  }
+}
+/* Estilos para el contenedor */
+.Contenedor-boton {
+padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem; /* 8px */
+  font-size: 1.25rem; /* 20px */
+}
+
+@media (min-width: 768px) {
+  .Contenedor-boton  {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1rem; /* 32px */
+  }
+}
+
+/* Estilos para el botón */
+.Boton {
+ 
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+  transition: all 0.3s ease; /* Ajusta el tiempo de la transición según tus necesidades */
+  border: 2px solid; /* Ajusta el color del borde según tus necesidades */
+  cursor: pointer;
+  font-size: 1rem; /* 16px */
+  width: fit-content;
+  border-radius: 0.75rem; /* 12px */
+}
+
+
+.Boton:hover {
+  cursor: pointer;
+  color: #e7800b;
+  
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Ajusta el color de la sombra según tus necesidades */
+}
+
+
 /* aca tenemos los estilos de la navegacion   */
 .Caja-nav {
   padding-left: 0.75rem; /* px-3 */
