@@ -24,9 +24,9 @@ main{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 40;
+  z-index: 30;
     
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0 2px 4px rgba(121, 33, 33, 0.1); /* Sombra ligera */
 }
 
 /* Estilos para container */
@@ -34,7 +34,7 @@ main{
   max-width: 72rem; /* Equivalente a max-w-6xl en Tailwind CSS */
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; /* Añadir espacio alrededor del contenido */
+  padding: 2rem; /* Añadir espacio alrededor del contenido */
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centrar verticalmente los elementos */
@@ -44,29 +44,34 @@ main{
 .Datos  {
  display: flex;
   margin: 2rem; /* Resetear márgenes */
-  font-size: 3rem; /* Tamaño del título */
+  font-size: 2rem; /* Tamaño del título */
   font-family:'Courier New', Courier, monospace;
   font-weight:lighter;
   text-align: center;
 }
 
-@media (min-width: 768px) {
- .Datos h1{
+@media (min-width: 600px) {
+  .Datos {
+    display: flex;
+    padding: 20px;
+
+      margin: 10px; /* Eliminar márgenes en pantallas grandes */
+      font-size: 35px; /* Tamaño del título en pantallas grandes */
       text-align: left; /* Alinear a la izquierda en pantallas grandes */
-     
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
   }
 }
-
 /* Estilos para el span dentro del título */
-h1 .text-secondary {
-  color: #f5f7f7; /* Color secundario */
+.Texto-inicio .text-secondary {
+  color: #0be7e7; /* Color secundario */
 }
 
 /* Estilos para el contenedor de los íconos */
 .icons-container {
   display: flex;
   justify-content: center;
-  gap: 1.75rem; /* Espacio entre íconos */
+  gap: 75rem; /* Espacio entre íconos */
 }
 
 .icons-container a {
@@ -74,10 +79,17 @@ h1 .text-secondary {
 }
 
 .icons-container a:hover {
-  color: #6932ec; /* Cambio de color en hover */
+  color: #f4f3f5; /* Cambio de color en hover */
 }
 .Texto-inicio{
-  color: #c1abf2;
+  color: #ead9fa;
+}
+@media (min-width: 400px) {
+  .Texto-inicio {
+      font-size: 2rem; /* Tamaño del texto en pantallas grandes */
+      margin-bottom: 2rem; /* Espacio inferior en pantallas grandes */
+      text-align: left; /* Alinear a la izquierda en pantallas grandes */
+  }
 }
 /* aca tenemos los estilos de la navegacion   */
 .Caja-nav {
@@ -122,8 +134,8 @@ h1 .text-secondary {
 /*///////////////////// CONTENIDO INICIO///////////////// */
 
 .Texto-inicio {
-  margin-bottom: 1.25rem; /* mb-5 */
-  font-size: 2rem; /* text-9xl */
+  margin-bottom: 25rem; /* mb-5 */
+  font-size: 30px; /* text-9xl */
 }
 
 @media (min-width: 768px) {
