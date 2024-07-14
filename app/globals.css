@@ -12,8 +12,46 @@ main{
   height: 100vh;
   height: 100dvh;
 }
- 
 
+/* aca tenemos los estilos de la navegacion   */
+.Caja-nav {
+  padding-left: 0.75rem; /* px-3 */
+  padding-right: 0.75rem; /* px-3 */
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem; /* py-2 */
+  transition: all 150ms; /* transition duration-150 */
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer; /* cursor-pointer */
+}
+
+.Caja-nav:hover {
+  background-color: rgb(21, 18, 18); /* hover:white */
+}
+
+.bg-secondary {
+  background-color: #f0f0f0; /* Ejemplo de color para bg-secondary */
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  background-color: #1f1934;
+}
+.Naveg{
+  
+    position: fixed;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    height: max-content;
+    bottom: 10px;
+
+}
+/* ////////////////////// fin de la navegacion ////////////////////////// */ 
 @layer utilities {
   .text-balance {
     text-wrap: balance;

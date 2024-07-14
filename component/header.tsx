@@ -12,7 +12,7 @@ const Header = () => {
         <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
 
         <header>
-            <div className="container justify-center max-w-6xl mx-auto md:flex">
+            <div className="contenedor">
                 <a href="/">
                    <h1 className= "flex mt-4 text-xl italic text-center text-gray-800">
                    Emiliano 

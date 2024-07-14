@@ -63,7 +63,7 @@ const CoverParticles =() => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 150,
+                        distance: 100,
                         enable: true,
                         opacity: 0.5,
                         width: 1,
@@ -75,7 +75,7 @@ const CoverParticles =() => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 2,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
@@ -92,7 +92,7 @@ const CoverParticles =() => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 0, max: 5 },
                     },
                 },
                 detectRetina: true,
