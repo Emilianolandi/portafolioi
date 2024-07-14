@@ -31,10 +31,10 @@ main{
 
 /* Estilos para container */
 .container {
-  max-width: 72rem; /* Equivalente a max-w-6xl en Tailwind CSS */
+  max-width: 60rem; /* Equivalente a max-w-6xl en Tailwind CSS */
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem; /* Añadir espacio alrededor del contenido */
+  padding: 1rem; /* Añadir espacio alrededor del contenido */
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centrar verticalmente los elementos */
@@ -51,7 +51,7 @@ main{
 }
 
 @media (min-width: 600px) {
-  .Datos {
+  .Datos h1{
     display: flex;
     padding: 20px;
 
@@ -84,10 +84,10 @@ main{
 .Texto-inicio{
   color: #ead9fa;
 }
-@media (min-width: 400px) {
-  .Texto-inicio {
-      font-size: 1rem; /* Tamaño del texto en pantallas grandes */
-      margin-bottom: 1rem; /* Espacio inferior en pantallas grandes */
+@media (min-width: 600px) {
+  .Texto-inicio h2 {
+      font-size: 15px; /* Tamaño del texto en pantallas grandes */
+      margin-bottom: 15px; /* Espacio inferior en pantallas grandes */
       text-align: left; /* Alinear a la izquierda en pantallas grandes */
   }
 }
