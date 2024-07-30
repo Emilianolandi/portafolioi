@@ -33,9 +33,9 @@ export default function RootLayout({
         </style>
       </head>
       <body>
+        <Header />
         <Navbar />
         {children}
-        <Header />
       </body>
     </html>
   );

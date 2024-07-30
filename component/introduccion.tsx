@@ -19,7 +19,10 @@ const Introduction = () =>{
                         </h1>
         <Image src="/home-4.png" priority width={500} height={500} alt="profile" />
       </div>
+     
+     
       <div className="flex-1 max-w-md text-center md:text-left md:order-1"> {/* Estilo para el texto */}
+      
   <h2 className="Texto-inicio"> {/* Cambié text-6xl por text-7xl */}
   <br />
   <br />
@@ -44,6 +47,7 @@ const Introduction = () =>{
             repeat={Infinity}
             className="font-bold text-secondary"
           />
+       
         <p className='Impresion'>
           <br />
           <br />
@@ -63,7 +67,6 @@ const Introduction = () =>{
        
         </div>
         </h2>
-        
       </div>
         </div>
     </div>

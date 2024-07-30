@@ -51,7 +51,7 @@ main{
 }
 
 @media (min-width: 600px) {
-  .Datos h1{
+  .Datos {
     display: flex;
     padding: 20px;
 
@@ -71,7 +71,7 @@ main{
 .icons-container {
   display: flex;
   justify-content: center;
-  gap: 75rem; /* Espacio entre íconos */
+  gap: 5rem; /* Espacio entre íconos */
 }
 
 .icons-container a {
@@ -85,7 +85,7 @@ main{
   color: #ead9fa;
 }
 @media (min-width: 600px) {
-  .Texto-inicio h2 {
+  .Texto-inicio  {
       font-size: 15px; /* Tamaño del texto en pantallas grandes */
       margin-bottom: 15px; /* Espacio inferior en pantallas grandes */
       text-align: left; /* Alinear a la izquierda en pantallas grandes */
@@ -111,15 +111,15 @@ main{
 padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0.5rem; /* 8px */
-  font-size: 1.25rem; /* 20px */
+  margin-bottom: 8px; /* 8px */
+  font-size: 1rem; /* 20px */
 }
 
 @media (min-width: 768px) {
   .Contenedor-boton  {
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 1rem; /* 32px */
+      margin-bottom: 32px; /* 32px */
   }
 }
 
@@ -190,14 +190,14 @@ padding: 20px;
 /*///////////////////// CONTENIDO INICIO///////////////// */
 
 .Texto-inicio {
-  margin-bottom: 25rem; /* mb-5 */
+  margin-bottom: 5rem; /* mb-5 */
   font-size: 30px; /* text-9xl */
 }
 
 @media (min-width: 768px) {
   .texto-inicio {
-      font-size: 5rem; /* md:text-7xl */
-      margin-bottom: 5rem; /* md:mb-20 */
+      font-size: 3rem; /* md:text-7xl */
+      margin-bottom: 3rem; /* md:mb-20 */
   }
 }
 
