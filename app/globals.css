@@ -44,8 +44,8 @@ main{
 .Datos  {
  display:flex;
 
-  margin: 10px; /* Resetear márgenes */
-  font-size: 13px; /* Tamaño del título */
+  margin: 4px; /* Resetear márgenes */
+  font-size: 16px; /* Tamaño del título */
   font-family:'Courier New', Courier, monospace;
   font-weight:lighter;
   text-align:left;

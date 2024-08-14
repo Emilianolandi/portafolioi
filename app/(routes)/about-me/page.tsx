@@ -10,8 +10,8 @@ const PageAboutMe=() =>{
        <TransitionPage/>
        <ContainerPage>
         <h1 className="text-2xl leading-tight text-center md:text-left 
-        md:text-5xl md:mt-10">Toda Mi {' '}
-        <span className="font-bold text-secondary"> trayectoria Profesional</span>
+        md:text-5xl md:mt-10 p-11" > trayectoria{' '}
+        <span className="font-bold text-secondary"> Profesional</span>
         </h1>
        </ContainerPage>
        <Avatar/>

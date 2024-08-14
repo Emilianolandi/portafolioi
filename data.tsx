@@ -5,6 +5,7 @@ export const socialNetworks = [
         id: 1,
         logo: <Youtube size={30} strokeWidth={1} />,
         src: "#!",
+       
     },
     {
         id: 2,
