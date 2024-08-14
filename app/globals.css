@@ -42,21 +42,24 @@ main{
 
 /* Estilos para el título */
 .Datos  {
- display: flex;
-  margin: 1rem; /* Resetear márgenes */
-  font-size: 3px; /* Tamaño del título */
+ display:flex;
+
+  margin: 10px; /* Resetear márgenes */
+  font-size: 13px; /* Tamaño del título */
   font-family:'Courier New', Courier, monospace;
   font-weight:lighter;
-  text-align: center;
+  text-align:left;
 }
-
-@media (min-width: 800px) {
+.Datos span{
+  color: #e7800b;
+}
+@media (min-width: 600px) {
   .Datos {
     display: flex;
-    padding:10px;
+    padding:0px;
 
       margin: 10px; /* Eliminar márgenes en pantallas grandes */
-      font-size: 35px; /* Tamaño del título en pantallas grandes */
+      font-size: 25px; /* Tamaño del título en pantallas grandes */
       text-align: left; /* Alinear a la izquierda en pantallas grandes */
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -159,7 +162,7 @@ padding: 20px;
 }
 
 .Caja-nav:hover {
-  background-color: rgb(21, 18, 18); /* hover:white */
+  background-color: rgb(244, 12, 12); /* hover:white */
 }
 
 .bg-secondary {
@@ -169,7 +172,7 @@ padding: 20px;
 .contenedor{
   display: flex;
   justify-content: center;
-  background-color: #1f1934;
+  background-color: #2e2c2a;
 }
 .Naveg{
   
@@ -199,6 +202,16 @@ padding: 20px;
       font-size: 3rem; /* md:text-7xl */
       margin-bottom: 3rem; /* md:mb-20 */
   }
+
+  .pres {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 450px; /* Ajusta el ancho del contenedor */
+    height: 450px; /* Ajusta el alto del contenedor */
+    z-index: 50; /* Asegúrate de que esté por encima de otros elementos si es necesario */
+}
+
 }
 
 @layer utilities {
