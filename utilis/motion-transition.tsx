@@ -26,8 +26,8 @@ export const fadeIn = (position: string) => {
             }
         },
         hidden: {
-            y: position === 'bottom' ? -80 :0,
-            x: position === 'ringt' ? 80 : 0,
+            y: position === 'bottom' ? -60 :0,
+            x: position === 'ringt' ? 60 : 0,
             opacity: 0,
             transition:{
                 type: 'tween',

@@ -11,12 +11,7 @@ const Introduction = () =>{
     <div className="z-20 flex flex-col md:flex-row items-center h-full p-6 py-20 md:py-1">
      
       <div className="flex-none mb-6 md:mb-0 md:w-1/2 md:order-2"> {/* Estilo para la imagen */}
-  <h1 className="Datos">
-                            Emiliano 
-                          Landi
-                          
-                  
-                        </h1>
+ 
         <Image src="/home-4.png" priority width={500} height={500} alt="profile" />
       </div>
      
