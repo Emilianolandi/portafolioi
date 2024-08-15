@@ -1,0 +1,35 @@
+[33m0fbfd51[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to HEAD~3
+[33mfaa3587[m HEAD@{1}: reset: moving to HEAD~1
+[33m9165c49[m HEAD@{2}: reset: moving to HEAD~1
+[33m4dbe458[m HEAD@{3}: reset: moving to HEAD~1
+[33m4a7f66c[m HEAD@{4}: reset: moving to HEAD~1
+[33m0a4f276[m HEAD@{5}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m4a7f66c[m HEAD@{6}: commit: prueba
+[33m4dbe458[m HEAD@{7}: reset: moving to HEAD~1
+[33m4572d34[m HEAD@{8}: commit: servicios maquetacion
+[33m4dbe458[m HEAD@{9}: commit: services
+[33m9165c49[m HEAD@{10}: commit: maquetando service
+[33mfaa3587[m HEAD@{11}: commit: probando en dispositivos mobiles
+[33m1b6f025[m HEAD@{12}: commit: posicionando objetos
+[33m3730584[m HEAD@{13}: commit: mis experiencias
+[33m0fbfd51[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{14}: commit: page sobre mi
+[33mbd1f557[m HEAD@{15}: commit: maquetando pagina 2
+[33m4cec0e6[m HEAD@{16}: commit: pueba de posicionamiento de elementos
+[33m7cdc7b7[m HEAD@{17}: commit: header arriba
+[33m5907373[m HEAD@{18}: commit: alineando para dispositivos moviles
+[33m86adaf6[m HEAD@{19}: commit: boton proyect
+[33mee8dd7d[m HEAD@{20}: commit: css responsive
+[33m479c13d[m HEAD@{21}: commit: probandi dispositivos moviles
+[33md46d8bf[m HEAD@{22}: commit: ordenando informacion personal
+[33mdf7e4e0[m HEAD@{23}: commit: menu
+[33m4668ba0[m HEAD@{24}: commit: posicionamiento del nav
+[33mc2298f5[m HEAD@{25}: commit: modificaciones en el header
+[33m585bfab[m HEAD@{26}: commit: agregando texto y animaciones en home
+[33m1e19106[m HEAD@{27}: commit: carga de redes socuales y imagenes al home
+[33m13254fe[m HEAD@{28}: commit: animaciones en la navegacion, cuando recargo la page
+[33ma993e84[m HEAD@{29}: commit: configuracion para usar animacion
+[33m118d784[m HEAD@{30}: commit: configuracion de animaciones
+[33mf3fb70e[m HEAD@{31}: commit: estructura y navegacion
+[33m28993fc[m HEAD@{32}: commit: estructura
+[33m601a0cd[m HEAD@{33}: Branch: renamed refs/heads/master to refs/heads/main
+[33m601a0cd[m HEAD@{35}: commit (initial): Initial commit from Create Next App
