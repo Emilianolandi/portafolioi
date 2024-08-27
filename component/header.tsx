@@ -13,12 +13,12 @@ const Header = () => {
             <header>
             <div className="Header-1">
                     <Link href='/'>
-                        <h1 className="Datos-Header">
+                        <h2 className="Datos-Header">
                             Emiliano 
-                            &nbsp;
+                            
                            
                             <span className=" text-secondary">Landi</span>
-                        </h1>
+                        </h2>
                            {/* <h1 className="flex m-4 font-bold text-left">Desarrollador 
                            {" "}
                         <span className="flex z-10 font-bold text-secondary"> &nbsp;full stack</span>

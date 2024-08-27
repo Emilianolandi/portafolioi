@@ -38,6 +38,7 @@ const Introduction = () =>{
                   <a href="/projects" className="Botom-P">
                       Ver proyectos
                   </a>
+                  &nbsp;
                   <a href="/contact"
                       className="Contacto-C" >
                       Contacta conmigo
