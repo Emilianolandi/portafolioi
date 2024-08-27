@@ -15,14 +15,14 @@ import MotionTransition from "./transition-component";
 const Navbar = () => {
     const router = usePathname()
     return(
-        <MotionTransition position="right" className="Naveg">
+        <MotionTransition position="right" className="caja-nav">
             <nav>
 
-            <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-white/15 background-blur-sm">
+            <div className="Navegacion">
                     {itemsNavbar.map((item) => (
                         <div
                             key={item.id}
-                            className="Caja-nav"
+                            className="Nav-1"
                             data-tooltip-target="tooltip-default">
                             <Link href={item.link}>{item.icon} </Link>
                         </div>

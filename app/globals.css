@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 html, body{
  color: #fff;
  background: #1f1934;
@@ -12,171 +13,26 @@ main{
   height: 100vh;
   height: 100dvh;
 }
-/* Estilos para el contenedor Estructura */
-/* Estilos para el contenedor Datos */
-/* Estilos para el contenedor Datos */
-/* Estilos para el contenedor Informacion */
-/* Estilos para el contenedor Informacion */
-/* Estilos para MotionTransition */
-/* Estilos para MotionTransition */
-.motion-transition {
+@layer utilities{
+  .text-balance{
+    text-wrap: balance;
+  }
+}
+/* ///////////////////// ACA COMIENZAN LOS ESTILOS ///////////////////////////  */
+
+
+
+/* /////////////////////////// NAVEGACION///////////////////////////// */
+.page_body{
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* Esta propiedad es equivalente a bg-cover */
+  background-image: linear-gradient(to right, #ff7e5f); /* Ajusta los colores según necesites */
+}
+.caja-nav{
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 30;
-    
-  box-shadow: 0 2px 4px rgba(121, 33, 33, 0.1); /* Sombra ligera */
-}
-
-/* Estilos para container */
-.container {
-  max-width: 60rem; /* Equivalente a max-w-6xl en Tailwind CSS */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem; /* Añadir espacio alrededor del contenido */
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Centrar verticalmente los elementos */
-}
-
-/* Estilos para el título */
-.Datos  {
- display:flex;
-
-  margin: 4px; /* Resetear márgenes */
-  font-size: 16px; /* Tamaño del título */
-  font-family:'Courier New', Courier, monospace;
-  font-weight:lighter;
-  text-align:left;
-}
-.Datos span{
-  color: #e7800b;
-}
-@media (min-width: 600px) {
-  .Datos {
-    display: flex;
-    padding:0px;
-
-      margin: 10px; /* Eliminar márgenes en pantallas grandes */
-      font-size: 25px; /* Tamaño del título en pantallas grandes */
-      text-align: left; /* Alinear a la izquierda en pantallas grandes */
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-  }
-}
-/* Estilos para el span dentro del título */
-.Texto-inicio .text-secondary {
-  color: #e7800b; /* Color secundario */
-}
-
-/* Estilos para el contenedor de los íconos */
-.icons-container {
-  display: flex;
-  justify-content: center;
-  gap: 5rem; /* Espacio entre íconos */
-}
-
-.icons-container a {
-  transition: all 0.3s ease; /* Transición en hover */
-}
-
-.icons-container a:hover {
-  color: #f4f3f5; /* Cambio de color en hover */
-}
-.Texto-inicio{
-  color: #ead9fa;
-}
-@media (min-width: 600px) {
-  .Texto-inicio  {
-      font-size: 15px; /* Tamaño del texto en pantallas grandes */
-      margin-bottom: 15px; /* Espacio inferior en pantallas grandes */
-      text-align: left; /* Alinear a la izquierda en pantallas grandes */
-  }
-}
-.Impresion {
-  font-size: small;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5rem; /* 8px */
-  font-size: 1rem; /* 20px */
-}
-
-@media (min-width: 768px) {
-  .Impresion {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 1rem; /* 32px */
-  }
-}
-/* Estilos para el contenedor */
-.Contenedor-boton {
-padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8px; /* 8px */
-  font-size: 1rem; /* 20px */
-}
-
-@media (min-width: 768px) {
-  .Contenedor-boton  {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 32px; /* 32px */
-  }
-}
-
-/* Estilos para el botón */
-.Boton {
- 
-  padding-left: 0.75rem; /* 12px */
-  padding-right: 0.75rem; /* 12px */
-  padding-top: 0.5rem; /* 8px */
-  padding-bottom: 0.5rem; /* 8px */
-  transition: all 0.3s ease; /* Ajusta el tiempo de la transición según tus necesidades */
-  border: 2px solid; /* Ajusta el color del borde según tus necesidades */
-  cursor: pointer;
-  font-size: 1rem; /* 16px */
-  width: fit-content;
-  border-radius: 0.75rem; /* 12px */
-}
-
-
-.Boton:hover {
-  cursor: pointer;
-  color: #e7800b;
-  
-  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Ajusta el color de la sombra según tus necesidades */
-}
-
-
-/* aca tenemos los estilos de la navegacion   */
-.Caja-nav {
-  padding-left: 0.75rem; /* px-3 */
-  padding-right: 0.75rem; /* px-3 */
-  padding-top: 0.5rem; /* py-2 */
-  padding-bottom: 0.5rem; /* py-2 */
-  transition: all 150ms; /* transition duration-150 */
-  border-radius: 9999px; /* rounded-full */
-  cursor: pointer; /* cursor-pointer */
-}
-
-.Caja-nav:hover {
-  background-color: rgb(244, 12, 12); /* hover:white */
-}
-
-.bg-secondary {
-  background-color: #f0f0f0; /* Ejemplo de color para bg-secondary */
-}
-
-.contenedor{
-  display: flex;
-  justify-content: center;
-  background-color: #2e2c2a;
-}
-.Naveg{
-  
-    position: fixed;
     z-index: 40;
     display: flex;
     flex-direction: column;
@@ -186,36 +42,272 @@ padding: 20px;
     margin-top: auto;
     height: max-content;
     bottom: 10px;
-
 }
-/* ////////////////////// fin de la navegacion ////////////////////////// */ 
+.Navegacion{
+  display: flex;                 /* flex */
+  align-items: center;           /* items-center */
+  justify-content: center;       /* justify-center */
+  gap: 0.5rem;                   /* gap-2 (equivalente a 8px) */
+  padding: 0.25rem 1rem;         /* px-4 py-1 (1rem = 16px, 0.25rem = 4px) */
+  border-radius: 9999px;         /* rounded-full */
+  background-color: rgba(255, 255, 255, 0.15); /* bg-white/15 */
+  backdrop-filter: blur(4px);    /* background-blur-sm */
+}
+.Nav-1 {
+  padding: 0.1rem 0.5rem;       /* px-3 py-2 */
+  transition: background-color 150ms ease-in-out; /* transition duration-150 */
+  border-radius: 9999px;         /* rounded-full */
+  cursor: pointer;               /* cursor-pointer */
+}
 
-/*///////////////////// CONTENIDO INICIO///////////////// */
+.Nav-1:hover {
+  background-color:#da8747; /* hover:bg-secondary */
+}
+.Nav-1.bg-secondary {
+  background-color: #eaff00; /* Cambia a tu color secundario */
+}
+/* Si deseas aplicar el color de fondo cuando el elemento tiene una clase activa */
 
-.Texto-inicio {
-  margin-bottom: 5rem; /* mb-5 */
-  font-size: 30px; /* text-9xl */
+/* //////////////////////aCA TENEMOS LAS TRANSICIONES/////////////////////////////////// */
+
+.transition-page {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  right: full;
+  width:100%;
+  
+  background-color: #2e2257; /* Color de fondo deseado */
+  transform: translateX(0); /* Ajusta la posición si es necesario */
+}
+
+/* ////////////////////// ACA TENEMOS EL HEADER/////////////////////////////////// */
+
+.Header-inicio {
+  
+  position: absolute;
+  z-index: 40;
+  display: inline-block;
+  width: 100%;
+  top: 5px; /* O usa px según tus necesidades */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Estilos específicos para dispositivos medianos en adelante (md) */
+@media (min-width: 768px) {
+  .Header-inicio {
+    
+      top: 5px; /* O usa px según tus necesidades */
+    }
+  }
+  
+  .Header-1 {
+    /* Estilo base para el contenedor */
+    display: flex;
+    justify-content: space-between;
+    max-width: 72rem; /* Equivalente a max-w-6xl en Tailwind */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Estilo para dispositivos medianos y mayores (md) */
+  @media (min-width: 768px) {
+    .Header-1 {
+      display: flex; /* Aplica flex solo en dispositivos medianos y mayores */
+      text-align: center;
+    }
+}
+.Datos-Header {
+  margin-top:0.2rem; /* Equivalente a my-3 en Tailwind */
+  margin-bottom: 0.75rem; /* Equivalente a my-3 en Tailwind */
+  font-size: 2rem; /* Equivalente a text-4xl en Tailwind */
+  font-weight: bold; /* Equivalente a font-bold en Tailwind */
+  text-align: center; /* Equivalente a text-center en Tailwind */
+}
+
+/* Estilos específicos para dispositivos medianos en adelante (md) */
+@media (min-width: 668px) {
+  .Datos-Header {
+    display:flex;
+      text-align: center; /* Equivalente a md:text-left en Tailwind */
+  }
+}
+/* Estilos generales para el contenedor Redes */
+/* Estilos generales para el contenedor Redes */
+.Redes {
+  display: flex;
+  align-items: center;        /* Centra los elementos verticalmente en el contenedor */
+  justify-content: center;    /* Centra los elementos horizontalmente en el contenedor */
+  gap: 1rem;               /* Espacio entre los elementos */
+}
+
+/* Estilos para los elementos dentro del contenedor Redes */
+.Redes a, .Redes img {
+  transition: all 300ms ease-in-out; /* Aplica transición a todos los cambios en 300ms */
+}
+
+/* Efectos de hover para los elementos dentro del contenedor Redes */
+.Redes a:hover, .Redes img:hover {
+  color: #da8747;    /* Cambia el color al valor de la variable --secondary en hover */
+  transform: scale(1.05);    /* Opción: Aumenta ligeramente el tamaño de la imagen en hover */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .Redes {
+   display: inline-table;
+    gap: 0.5rem;           /* Reduce el espacio entre los elementos en dispositivos móviles */
+  }
+
+  .Redes img {
+    width: 50px;          /* Ajusta el tamaño de los logos en dispositivos móviles */
+    height: auto;         /* Mantiene la proporción original de la imagen */
+  }
+}
+
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 480px) {
+  .Redes img {
+    width: 40px;          /* Ajusta aún más el tamaño de los logos en pantallas muy pequeñas */
+  }
+}
+
+
+/* //////////////////// INTRODUCCION DE LA HOME /////////////////////////// */
+
+.Introduction {
+  position: relative;
+  z-index: 20;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  background-color: rgba(50, 40, 60, 0.6); /* Fondo oscuro con opacidad del 60% */
+}
+
+
+/* ***ACA TENEMOS LOS ESTILOS DE LA IMAGEN ///////////////////* */
+.Introduction-Caja {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  align-items: center;
+  height: 100%;
+  padding: 1.5rem; /* Equivalente a p-6 */
+  padding-top: 5rem; /* Equivalente a py-20 */
+  padding-bottom: 5rem; /* Equivalente a py-20 */
+  grid-template-columns: 1fr; /* Una sola columna por defecto */
 }
 
 @media (min-width: 768px) {
-  .texto-inicio {
-      font-size: 3rem; /* md:text-7xl */
-      margin-bottom: 3rem; /* md:mb-20 */
+  .Introduction-Caja {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más grandes */
+    padding-top: 0; /* Elimina el padding superior */
+    padding-bottom: 0; /* Elimina el padding inferior */
   }
-
-  .pres {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 450px; /* Ajusta el ancho del contenedor */
-    height: 450px; /* Ajusta el alto del contenedor */
-    z-index: 50; /* Asegúrate de que esté por encima de otros elementos si es necesario */
 }
 
+
+.Caja-I {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 28rem; /* Equivalente a max-w-md en Tailwind */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+ /* //////////////////////fIN DE ESTILOS DE IMAGEN //////////////////// */
+
+ /* ///////////////////ACA ESTAN LOS ESTILOS DE LOS PARRAFOS/////////////// */
+
+ .Introduction-Info {
+  display: flex;              /* Utiliza Flexbox para el contenedor */
+  flex-direction: column ;     /* Orienta los elementos en una columna */
+  justify-content:center;   /* Centra los elementos verticalmente en el contenedor */
+  max-width: 38rem;           /* Establece un ancho máximo equivalente a max-w-md en Tailwind */
+  width: 20%;                /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+.Texto-I {
+  margin-bottom: 1.25rem; /* Equivalente a mb-5 en Tailwind */
+  font-size: 1.5rem; /* Equivalente a text-2xl en Tailwind */
+  line-height: 1.25; /* Equivalente a leading-tight en Tailwind */
+  text-align: center; /* Centra el texto por defecto */
+}
+
+/* Estilos específicos para dispositivos medianos en adelante (md) */
+@media (min-width: 768px) {
+  .Texto-I {
+    font-size: 2rem; /* Equivalente a text-4xl en Tailwind */
+    text-align: left; /* Alinea el texto a la izquierda en pantallas más grandes */
+    margin-bottom: 2.5rem; /* Equivalente a md:mb-10 en Tailwind */
   }
+}
+/* Estilos para el contenedor Mi-Informacion */
+.Mi-Informacion {
+  margin-left: auto;
+  margin-right: auto; /* Centra horizontalmente el contenedor */
+
+  margin-bottom: 0.5rem; /* Equivalente a mb-2 en Tailwind */
+  font-size: 1.25rem; /* Equivalente a text-xl en Tailwind */
+}
+
+/* Estilos específicos para dispositivos medianos en adelante (md) */
+@media (min-width: 768px) {
+  .Mi-Informacion {
+    margin-left: 0; /* Elimina el margen horizontal en pantallas medianas en adelante */
+    margin-right: 0; /* Elimina el margen horizontal en pantallas medianas en adelante */
+    margin-bottom: 1rem; /* Equivalente a mb-8 en Tailwind */
+  }
+}
+/* Estilos para el contenedor Proyectos */
+.Proyectos {
+  display: flex; /* Usa Flexbox para el contenedor */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 0.75rem; /* Espacio entre los elementos (equivalente a gap-3 en Tailwind) */
+}
+
+/* Estilos específicos para dispositivos medianos en adelante (md) */
+@media (min-width: 768px) {
+  .Proyectos {
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor en pantallas medianas en adelante */
+    gap: 2.5rem; /* Espacio mayor entre los elementos (equivalente a gap-10 en Tailwind) */
+  }
+}
+/* Estilos para el botón Botom-P */
+.Botom-P {
+  padding: 0.5rem 0.75rem; /* Equivalente a px-3 py-2 en Tailwind */
+  margin-top: 0.5rem; /* Equivalente a my-2 en Tailwind */
+  margin-bottom: 0.5rem; /* Equivalente a my-2 en Tailwind */
+  transition: all 150ms ease-in-out; /* Transición para todos los cambios en 150ms (equivalente a duration-150 en Tailwind) */
+  border: 2px solid currentColor; /* Borde de 2px */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+  font-size: 1rem; /* Equivalente a text-md en Tailwind */
+  width: fit-content; /* Ajusta el ancho del elemento al contenido */
+  border-radius: 0.75rem; /* Bordes redondeados (equivalente a rounded-xl en Tailwind) */
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Efectos de hover para el botón Botom-P */
+.Botom-P:hover {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5); /* Sombra ligera en hover (equivalente a hover:shadow-xl en Tailwind) */
+}
+/* Estilos para el botón Contacto */
+.Contacto-C {
+  padding: 0.5rem 0.75rem; /* Equivalente a px-3 py-2 en Tailwind */
+  margin-top: 1.25rem; /* Equivalente a my-5 en Tailwind */
+  margin-bottom: 1.25rem; /* Equivalente a my-5 en Tailwind */
+  transition: all 150ms ease-in-out; /* Transición para todos los cambios en 150ms (equivalente a duration-150 en Tailwind) */
+  border: 2px solid currentColor; /* Borde de 2px con el color actual del texto (equivalente a border-2 en Tailwind) */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+  font-size: 1rem; /* Equivalente a text-md en Tailwind */
+  width: fit-content; /* Ajusta el ancho del elemento al contenido */
+  color: #da8747; /* Color del texto (equivalente a text-secondary en Tailwind) */
+  border-radius: 0.75rem; /* Bordes redondeados (equivalente a rounded-xl en Tailwind) */
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Efectos de hover para el botón Contacto */
+.Contacto-C:hover {
+  box-shadow: 0 4px 6px rgba(218, 135, 71, 0.5); /* Sombra ligera en hover (equivalente a hover:shadow-xl en Tailwind) */
+  color: #da8747; /* Color del texto en hover */
+  border-color: #da8747; /* Color del borde en hover (equivalente a border-secondary en Tailwind) */
 }

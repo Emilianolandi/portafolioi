@@ -1,22 +1,31 @@
-import Avatar from "@/component/avatar";
+"use client"
+
+import { Avatar } from "@/component/avatar";
 import ContainerPage from "@/component/conteiner";
-import CoverParticles from "@/component/cover-particles";
+// import CounterServices from "@/component/counter-services";
+import TimeLine from "@/component/time-line";
 import TransitionPage from "@/component/transition-pages";
 
-const PageAboutMe=() =>{
-    return(
-       <>
-      <CoverParticles/>
-       <TransitionPage/>
-       <ContainerPage>
-        <h1 className="text-2xl leading-tight text-center md:text-left 
-        md:text-5xl md:mt-10 p-11" > trayectoria{' '}
-        <span className="font-bold text-secondary"> Profesional</span>
-        </h1>
-       </ContainerPage>
-       <Avatar/>
-       </>
+const AboutMePage = () => {
+    return (
+        <>
+            <TransitionPage />
+            <ContainerPage>
+                <Avatar />
+                <h1 className="contenedor-trayectoria">
+                Trayectoria
+                    <span className="font-bold text-secondary">
+                         Profesional
+                    </span>
+                </h1>
+
+                {/* <CounterServices /> */}
+
+                <TimeLine />
+
+            </ContainerPage>
+        </>
     );
 }
 
-export default PageAboutMe
+export default AboutMePage;
