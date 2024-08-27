@@ -12,11 +12,7 @@ export const socialNetworks = [
         logo: <Linkedin size={30} strokeWidth={1} />,
         src: "#!",
     },
-    {
-        id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+   
     {
         id: 4,
         logo: <Rss size={30} strokeWidth={1} />,
