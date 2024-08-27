@@ -156,7 +156,7 @@ main{
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
   .Redes {
-   display: inline-table;
+   display: flex;
     gap: 0.5rem;           /* Reduce el espacio entre los elementos en dispositivos móviles */
   }
 
@@ -190,11 +190,11 @@ main{
   z-index: 10;
   display: grid;
   align-items: center;
-  height: 100%;
+  height: 100;
   padding: 1.5rem; /* Equivalente a p-6 */
   padding-top: 5rem; /* Equivalente a py-20 */
   padding-bottom: 5rem; /* Equivalente a py-20 */
-  grid-template-columns: 1fr; /* Una sola columna por defecto */
+  grid-template-columns: 2fr; /* Una sola columna por defecto */
 }
 
 @media (min-width: 768px) {
@@ -259,15 +259,17 @@ main{
 }
 /* Estilos para el contenedor Proyectos */
 .Proyectos {
+
   display: flex; /* Usa Flexbox para el contenedor */
   align-items: center; /* Centra los elementos verticalmente */
   justify-content: center; /* Centra los elementos horizontalmente */
-  gap: 0.75rem; /* Espacio entre los elementos (equivalente a gap-3 en Tailwind) */
+  gap: 0rem; /* Espacio entre los elementos (equivalente a gap-3 en Tailwind) */
 }
 
 /* Estilos específicos para dispositivos medianos en adelante (md) */
 @media (min-width: 768px) {
   .Proyectos {
+    padding: auto;
     justify-content: flex-start; /* Alinea los elementos al inicio del contenedor en pantallas medianas en adelante */
     gap: 2.5rem; /* Espacio mayor entre los elementos (equivalente a gap-10 en Tailwind) */
   }
