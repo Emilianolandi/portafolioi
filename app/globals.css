@@ -28,7 +28,7 @@ main{
   min-height: 100vh;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover; /* Esta propiedad es equivalente a bg-cover */
+   background-size: cover; /*Esta propiedad es equivalente a bg-cover */
   background-image: linear-gradient(to right, #ff7e5f); /* Ajusta los colores según necesites */
 }
 .caja-nav{
@@ -77,7 +77,7 @@ main{
   right: full;
   width:100%;
   
-  background-color: #2e2257; /* Color de fondo deseado */
+ background-color: #2e2257; /*Color de fondo deseado */
   transform: translateX(0); /* Ajusta la posición si es necesario */
 }
 
@@ -98,7 +98,7 @@ main{
 @media (min-width: 768px) {
   .Header-inicio {
     
-      top: 5px; /* O usa px según tus necesidades */
+      top: 10px; /* O usa px según tus necesidades */
     }
   }
   
@@ -106,7 +106,7 @@ main{
     /* Estilo base para el contenedor */
     display: flex;
     justify-content: space-between;
-    max-width: 72rem; /* Equivalente a max-w-6xl en Tailwind */
+    max-width: 80rem; /* Equivalente a max-w-6xl en Tailwind */
     margin-left: auto;
     margin-right: auto;
   }
@@ -316,3 +316,61 @@ main{
 
 
 /* ///////////////////////////////Fin de la home////////////////////////////////// */
+
+/* //////////////////CONTAINER PAGE ////////////////////// */
+
+.Container-Pag {
+  width: 100%; /* Equivalente a w-full */
+  max-width: 72rem; /* Equivalente a max-w-6xl */
+  padding-left: 1rem; /* Equivalente a px-4 */
+  padding-right: 1rem; /* Equivalente a px-4 */
+  padding-bottom: 10rem; /* Equivalente a pb-40 */
+  margin-left: auto; /* Equivalente a mx-auto */
+  margin-right: auto; /* Equivalente a mx-auto */
+  margin-top: 10rem; /* Equivalente a mt-40 */
+}
+
+@media (min-width: 768px) {
+  .Container-Pag {
+    padding-bottom: 0; /* Equivalente a md:pb-0 */
+    padding-left: 1.5rem; /* Equivalente a md:px-6 */
+    padding-right: 1.5rem; /* Equivalente a md:px-6 */
+  }
+}
+
+.press {
+  position: absolute; /* Posiciona el elemento de manera absoluta dentro de su contenedor padre */
+  bottom: 0; /* Alinea el elemento al fondo del contenedor padre */
+  right: 0; /* Alinea el elemento a la derecha del contenedor padre */
+
+}
+
+@media (min-width: 768px) {
+  .press {
+    display: inline-block; /* Muestra el elemento en pantallas medianas y más grandes */
+  }
+}
+.Img-About {
+  width: auto;          /* Deja que el ancho se ajuste automáticamente según la altura */
+  height: 50%;         /* Ajusta la altura de la imagen al 50% del contenedor */
+  max-width: 100%;     /* Evita que la imagen exceda el ancho del contenedor */
+  object-fit: cover;   /* Asegura que la imagen cubra completamente el contenedor */
+  position: absolute;  /* Posiciona la imagen de forma absoluta dentro del contenedor */
+  bottom: 0;           /* Ubica la imagen en la parte inferior del contenedor */
+  right: 0;            /* Ubica la imagen contra el margen derecho del contenedor */
+  margin: 0;           /* Elimina cualquier margen que pueda afectar la posición */
+}
+.contenedor-trayectoria {
+  justify-content: center;
+  font-size: 1rem; /* Equivalente a text-2xl */
+  line-height: 1; /* Equivalente a leading-tight */
+  text-align: center; /* Equivalente a text-center */
+}
+
+@media (min-width: 768px) {
+  .contenedor-trayectoria {
+    font-size: 3rem; /* Equivalente a md:text-5xl */
+    text-align: left; /* Equivalente a md:text-left */
+    margin-top: 2.5rem; /* Equivalente a md:mt-10 */
+  }
+}

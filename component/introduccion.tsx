@@ -8,7 +8,7 @@ const Introduction = () =>{
     return(
       <div className="Introduction">
       <div className="Introduction-Caja">
-          <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" />
+          <Image src="/home-4.png" priority width="600" height="600" alt="Avatar" />
           <div className="Caja-I">
               <h1 className="Texto-I">Si puedes pensarlo, <br />
               
