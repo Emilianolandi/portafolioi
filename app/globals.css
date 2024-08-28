@@ -127,7 +127,7 @@ main{
 
 .Datos-Header {
   margin-top: 0; /* Elimina el margen superior */
-  margin-bottom: 0.5rem; /* Reduce el margen inferior */
+  margin-bottom: 0.1rem; /* Reduce el margen inferior */
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -139,7 +139,7 @@ main{
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 0.5rem; /* Reduce el espacio entre Datos-Header y Redes */
+  margin-top: 0.3rem; /* Reduce el espacio entre Datos-Header y Redes */
 }
 
 @media (max-width: 768px) {
@@ -148,14 +148,14 @@ main{
   }
 
   .Redes img {
-    width: 50px;
+    width: 10px;
     height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .Redes img {
-    width: 40px;
+    width: 10px;
   }
 }
 
@@ -230,19 +230,20 @@ main{
 .Mi-Informacion {
   margin-left: auto;
   margin-right: auto; /* Centra horizontalmente el contenedor */
-
-  margin-bottom: 0.5rem; /* Equivalente a mb-2 en Tailwind */
-  font-size: 1.25rem; /* Equivalente a text-xl en Tailwind */
+align-items: center;
+  margin-bottom: 1.5rem; /* Equivalente a mb-2 en Tailwind */
+  font-size: 1.3rem; /* Equivalente a text-xl en Tailwind */
 }
 
 /* Estilos específicos para dispositivos medianos en adelante (md) */
 @media (min-width: 768px) {
   .Mi-Informacion {
-    margin-left: 0; /* Elimina el margen horizontal en pantallas medianas en adelante */
-    margin-right: 0; /* Elimina el margen horizontal en pantallas medianas en adelante */
+    margin-left: 10px; /* Elimina el margen horizontal en pantallas medianas en adelante */
+    margin-right: 10px; /* Elimina el margen horizontal en pantallas medianas en adelante */
     margin-bottom: 1rem; /* Equivalente a mb-8 en Tailwind */
   }
 }
+
 /* Estilos para el contenedor Proyectos */
 .Proyectos {
 
