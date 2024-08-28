@@ -37,6 +37,7 @@ const Header = () => {
                         ))} 
                 </div> 
                 </div>
+                <br />
             </header>
         </MotionTransition>
     );
