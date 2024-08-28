@@ -67,6 +67,14 @@ main{
   background-color: #eaff00; /* Cambia a tu color secundario */
 }
 /* Si deseas aplicar el color de fondo cuando el elemento tiene una clase activa */
+.Page.Initial {
+  display: flex; /* Equivalente a flex */
+  min-height: 100vh; /* Equivalente a min-h-[100vh] */
+  height: 100%; /* Equivalente a h-full */
+  background-repeat: no-repeat; /* Equivalente a bg-no-repeat */
+  background-size: cover; /* Equivalente a bg-gradient-cover */
+  background-image: linear-gradient(bg-gradient-cover); /* Define el gradiente específico aquí */
+}
 
 /* //////////////////////aCA TENEMOS LAS TRANSICIONES/////////////////////////////////// */
 
@@ -82,94 +90,69 @@ main{
 }
 
 /* ////////////////////// ACA TENEMOS EL HEADER/////////////////////////////////// */
-
 .Header-inicio {
-  
   position: absolute;
   z-index: 40;
-  display: inline-block;
+  display: block;
   width: 100%;
-  top: 5px; /* O usa px según tus necesidades */
+  top: 0; /* Alinea el contenedor al borde superior */
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* Estilos específicos para dispositivos medianos en adelante (md) */
 @media (min-width: 768px) {
   .Header-inicio {
-    
-      top: 10px; /* O usa px según tus necesidades */
-    }
+    top: 5px;
   }
-  
-  .Header-1 {
-    /* Estilo base para el contenedor */
-    display: flex;
-    justify-content: space-between;
-    max-width: 80rem; /* Equivalente a max-w-6xl en Tailwind */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Estilo para dispositivos medianos y mayores (md) */
-  @media (min-width: 768px) {
-    .Header-1 {
-      display: flex; /* Aplica flex solo en dispositivos medianos y mayores */
-      text-align: center;
-    }
-}
-.Datos-Header {
-  margin-top:0.2rem; /* Equivalente a my-3 en Tailwind */
-  margin-bottom: 0.75rem; /* Equivalente a my-3 en Tailwind */
-  font-size: 2rem; /* Equivalente a text-4xl en Tailwind */
-  font-weight: bold; /* Equivalente a font-bold en Tailwind */
-  text-align: center; /* Equivalente a text-center en Tailwind */
 }
 
-/* Estilos específicos para dispositivos medianos en adelante (md) */
-@media (min-width: 668px) {
-  .Datos-Header {
-    display:flex;
-      text-align: center; /* Equivalente a md:text-left en Tailwind */
+.Header-1 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80rem; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .Header-1 {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
   }
 }
-/* Estilos generales para el contenedor Redes */
-/* Estilos generales para el contenedor Redes */
+
+.Datos-Header {
+  margin-top: 0; /* Elimina el margen superior */
+  margin-bottom: 0.5rem; /* Reduce el margen inferior */
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; 
+}
+
 .Redes {
   display: flex;
-  align-items: center;        /* Centra los elementos verticalmente en el contenedor */
-  justify-content: center;    /* Centra los elementos horizontalmente en el contenedor */
-  gap: 1rem;               /* Espacio entre los elementos */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem; /* Reduce el espacio entre Datos-Header y Redes */
 }
 
-/* Estilos para los elementos dentro del contenedor Redes */
-.Redes a, .Redes img {
-  transition: all 300ms ease-in-out; /* Aplica transición a todos los cambios en 300ms */
-}
-
-/* Efectos de hover para los elementos dentro del contenedor Redes */
-.Redes a:hover, .Redes img:hover {
-  color: #da8747;    /* Cambia el color al valor de la variable --secondary en hover */
-  transform: scale(1.05);    /* Opción: Aumenta ligeramente el tamaño de la imagen en hover */
-}
-
-/* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
   .Redes {
-   display: flex;
-    gap: 0.5rem;           /* Reduce el espacio entre los elementos en dispositivos móviles */
+    gap: 0.5rem;
   }
 
   .Redes img {
-    width: 50px;          /* Ajusta el tamaño de los logos en dispositivos móviles */
-    height: auto;         /* Mantiene la proporción original de la imagen */
+    width: 50px;
+    height: auto;
   }
 }
 
-/* Estilos específicos para pantallas más pequeñas */
 @media (max-width: 480px) {
   .Redes img {
-    width: 40px;          /* Ajusta aún más el tamaño de los logos en pantallas muy pequeñas */
+    width: 40px;
   }
 }
 
