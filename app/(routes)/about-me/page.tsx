@@ -20,7 +20,7 @@ const AboutMePage = () => {
                          Profesional
                     </span>
                 </h1> 
-
+                <br />
                
 
                 <TimeLine /> 

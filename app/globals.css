@@ -380,29 +380,25 @@ align-items: center;
 /* ///////////////////ACA ESTA MI EXPERIENCIA  /////////////////////// */
 .Time-Id {
   position: relative;
-  margin-bottom: 1.5rem; /* Espacio entre cada contenedor */
+  margin-bottom: 3rem; /* Espacio entre cada contenedor */
   padding-left: 1.5rem; /* Espacio para la línea vertical */
+  color: #f6faf9;
+  font-size: 1.2rem;
 }
 
-.Time-Id::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px; /* Ancho de la línea vertical */
-  height: 100%; /* Altura completa del contenedor */
-  background-color: #e2e2e2; /* Color de la línea vertical */
-}
-
+  
 .Time-Info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-weight: 600; /* Fuente semi-negrita */
+  
   margin-bottom: 0.5rem; /* Espacio entre la fecha y el subtítulo */
 }
 
 .Time-Date {
-  display: inline-flex;
+  
+  display:flex;
   align-items: center;
   justify-content: center;
   width: 5rem; /* Ancho del contenedor de la fecha */
@@ -417,7 +413,7 @@ align-items: center;
 }
 
 .Time-Subtitle {
-  font-size: 1.25rem; /* Tamaño del texto del subtítulo */
+  font-size: 1.5rem; /* Tamaño del texto del subtítulo */
   font-weight: bold; /* Fuente en negrita */
   color: #8fa1ba; /* Color del texto del subtítulo */
 }
