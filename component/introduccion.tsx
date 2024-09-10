@@ -11,6 +11,7 @@ const Introduction = () =>{
       <div className="Introduction-Caja">
           <Image src="/home-4.png" priority width="600" height="600" alt="Avatar" />
           <div className="Caja-I">
+          
               <h1 className="Texto-I">Si puedes pensarlo, <br />
               
                   <TypeAnimation
@@ -23,13 +24,14 @@ const Introduction = () =>{
                           1000,
                           'puedes desarrollarlo',
                           1000
-                      ]}
-                      wrapper="span"
-                      speed={30}
-                      repeat={Infinity}
-                      className="font-bold text-secondary"
-                  />
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        repeat={Infinity}
+                        className="font-bold text-secondary"
+                        />
               </h1>
+                       
               
               <p className="Mi-Informacion">
                   Como des  arrollador frontend y creador de contenido, me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
@@ -37,7 +39,7 @@ const Introduction = () =>{
 
               <div className="Proyectos">
                   <a href="/projects" className="Botom-P">
-                      Ver proyectos
+                      Ver proyectos&nbsp;
                   </a>
                   &nbsp;
                   <a href="/contact"

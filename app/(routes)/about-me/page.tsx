@@ -10,8 +10,8 @@ import TransitionPage from "@/component/transition-pages";
 const AboutMePage = () => {
     return (
         <>
-        <CoverParticles/>
             <TransitionPage />
+        <CoverParticles/>
             <ContainerPage>
                 <Avatar />
                  <h1 className="contenedor-trayectoria">
@@ -21,9 +21,9 @@ const AboutMePage = () => {
                     </span>
                 </h1> 
 
-                {/* <CounterServices /> */}
+               
 
-                {/* <TimeLine /> */}
+                <TimeLine /> 
 
             </ContainerPage>
         </>

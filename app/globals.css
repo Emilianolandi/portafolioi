@@ -211,6 +211,14 @@ main{
   max-width: 38rem;           /* Establece un ancho máximo equivalente a max-w-md en Tailwind */
   width: 20%;                /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
+/* Aplicando estilos al span con la clase 'resaltado' */
+.resaltado {
+
+  
+  background-color: yellow; /* Fondo amarillo */
+  padding: 0 5px;    /* Añade un poco de relleno */
+}
+
 .Texto-I {
   margin-bottom: 1.25rem; /* Equivalente a mb-5 en Tailwind */
   font-size: 1.5rem; /* Equivalente a text-2xl en Tailwind */
@@ -326,7 +334,8 @@ align-items: center;
 }
 
 .press {
-  position: absolute; /* Posiciona el elemento de manera absoluta dentro de su contenedor padre */
+
+ /* Posiciona el elemento de manera absoluta dentro de su contenedor padre */
   bottom: 0; /* Alinea el elemento al fondo del contenedor padre */
   right: 0; /* Alinea el elemento a la derecha del contenedor padre */
 
@@ -334,6 +343,7 @@ align-items: center;
 
 @media (min-width: 768px) {
   .press {
+    
     display: inline-block; /* Muestra el elemento en pantallas medianas y más grandes */
   }
 }
@@ -342,10 +352,15 @@ align-items: center;
   height: 50%;         /* Ajusta la altura de la imagen al 50% del contenedor */
   max-width: 100%;     /* Evita que la imagen exceda el ancho del contenedor */
   object-fit: cover;   /* Asegura que la imagen cubra completamente el contenedor */
-  position: absolute;  /* Posiciona la imagen de forma absoluta dentro del contenedor */
+  position:fixed;  /* Posiciona la imagen de forma absoluta dentro del contenedor */
   bottom: 0;           /* Ubica la imagen en la parte inferior del contenedor */
   right: 0;            /* Ubica la imagen contra el margen derecho del contenedor */
   margin: 0;           /* Elimina cualquier margen que pueda afectar la posición */
+}
+@media (max-width: 767px) {
+  .Img-About {
+    display: none; /* Oculta el elemento en pantallas más pequeñas */
+  }
 }
 .contenedor-trayectoria {
   justify-content: center;
@@ -360,4 +375,53 @@ align-items: center;
     text-align: left; /* Equivalente a md:text-left */
     margin-top: 2.5rem; /* Equivalente a md:mt-10 */
   }
+}
+
+/* ///////////////////ACA ESTA MI EXPERIENCIA  /////////////////////// */
+.Time-Id {
+  position: relative;
+  margin-bottom: 1.5rem; /* Espacio entre cada contenedor */
+  padding-left: 1.5rem; /* Espacio para la línea vertical */
+}
+
+.Time-Id::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px; /* Ancho de la línea vertical */
+  height: 100%; /* Altura completa del contenedor */
+  background-color: #e2e2e2; /* Color de la línea vertical */
+}
+
+.Time-Info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5rem; /* Espacio entre la fecha y el subtítulo */
+}
+
+.Time-Date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem; /* Ancho del contenedor de la fecha */
+  height: 1.5rem; /* Altura del contenedor de la fecha */
+  background-color: #d1fae5; /* Color de fondo del contenedor de la fecha */
+  color: #10b981; /* Color del texto de la fecha */
+  font-size: 0.75rem; /* Tamaño del texto */
+  font-weight: 600; /* Fuente semi-negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  border-radius: 9999px; /* Bordes redondeados */
+  margin-bottom: 0.5rem; /* Espacio inferior del contenedor de la fecha */
+}
+
+.Time-Subtitle {
+  font-size: 1.25rem; /* Tamaño del texto del subtítulo */
+  font-weight: bold; /* Fuente en negrita */
+  color: #8fa1ba; /* Color del texto del subtítulo */
+}
+
+.Time-Description {
+  color: #c4cedc; /* Color del texto de la descripción */
 }

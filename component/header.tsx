@@ -14,7 +14,7 @@ const Header = () => {
             <div className="Header-1">
                     <Link href='/'>
                         <h3 className="Datos-Header">
-                            Emiliano 
+                            Emiliano &nbsp;
                             
                            
                             <span className=" text-secondary">Landi</span>
