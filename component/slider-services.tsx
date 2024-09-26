@@ -8,7 +8,7 @@ const SliderServices = () => {
     return (
         <Swiper
             breakpoints={{
-                320: {
+                310: {
                     slidesPerView: 1,
                     spaceBetween: 15,
                 },
@@ -26,15 +26,15 @@ const SliderServices = () => {
                 clickable: true,
             }}
             modules={[Pagination]}
-            className="h-auto md:h-[340px] w-full" // Cambiado a h-auto y w-full
+            className="Swiper-Caja" // Cambiado a w-full
         >
             {serviceData.map((item, index) => (
                 <SwiperSlide key={index}>
-                    <div className="flex flex-col px-4 py-6 h-auto md:h-[290px] rounded-lg cursor-pointer bg-[rgba(65,47,123,0.15)] group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 hover:border-secondary border-2">
+                    <div className="Swiper-Contenedor">
                         <div className="mb-4 text-4xl text-secondary">{item.icon}</div>
                         <div>
-                            <h3 className="mb-2 text-lg text-center">{item.title}</h3>
-                            <p className="text-sm text-center">{item.description}</p>
+                            <h3 className="mb-2 text-lg text-center">{item.title}</h3> {/* Alineado al centro */}
+                            <p className="text-sm text-center">{item.description}</p> {/* Alineado al centro */}
                         </div>
                     </div>
                 </SwiperSlide>

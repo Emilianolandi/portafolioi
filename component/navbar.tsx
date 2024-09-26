@@ -32,7 +32,7 @@ const Navbar = () => {
                 
             </div>
         </nav>
-        <br />
+        
         </MotionTransition>
        
     );
