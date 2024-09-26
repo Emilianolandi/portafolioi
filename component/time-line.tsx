@@ -2,8 +2,8 @@ import { dataAboutPage } from "@/data";
 
 const TimeLine = () => {
     return (
-        <div className="Time-Caja">
-            <div className="Time-Caja1">
+        <div className="flex flex-col justify-center divide-y divide-slate-200">
+            <div className="w-full max-w-3xl mx-auto md:pb-40 md:pt-20">
                 <div className="-my-6">
                     {dataAboutPage.map((data) => (
                      <div key={data.id} className="Time-Id">
