@@ -26,9 +26,7 @@ const ServicesPages=() =>{
                 </div>
 
                 {/* SLIDER */}
-               <div>
-                    <SliderServices />
-                </div> 
+               
       </div>
       
     
