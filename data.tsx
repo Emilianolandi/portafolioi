@@ -4,25 +4,26 @@ export const socialNetworks = [
     {
         id: 1,
         logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.youtube.com/@emilianolandi7669",
        
     },
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/emilianolandi/",
     },
    
     {
         id: 4,
         logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
+        src:"#!" ,
     },
     {
         id: 5,
         logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+        src: "https://mail.google.com/mail/u/0/#inbox?compose=new&to=EmilianoLandi.dev@gmail.com&subject=Consulta&body=Hola,%20tengo%20una%20consulta%20sobre..."
+    }
+    
 ];
 
 //aca tenemos el array de nuestra navegacion 
