@@ -8,7 +8,7 @@ import Image from "next/image";
 export function Avatar() {
     return (
         <MotionTransition position="bottom" className="pres">
-        <Image src="/avatar-1.png" width={600} height={600} className="Img-About" alt="Particles" />
+        <Image src="/avatar-1.png" width={300} height={300} className="Img-About" alt="Particles" />
     </MotionTransition>
     
     )

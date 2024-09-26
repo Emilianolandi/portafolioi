@@ -1,7 +1,9 @@
 // @useClient
 import React, { useRef } from 'react';
 
-
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";

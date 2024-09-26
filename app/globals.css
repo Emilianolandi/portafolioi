@@ -106,6 +106,7 @@ main{
 @media (min-width: 768px) {
   .Header-inicio {
     top: 5px;
+    
   }
 }
 
@@ -335,7 +336,7 @@ align-items: center;
 
 .press {
 
- /* Posiciona el elemento de manera absoluta dentro de su contenedor padre */
+ position:relative;/* Posiciona el elemento de manera absoluta dentro de su contenedor padre */
   bottom: 0; /* Alinea el elemento al fondo del contenedor padre */
   right: 0; /* Alinea el elemento a la derecha del contenedor padre */
 
@@ -343,14 +344,13 @@ align-items: center;
 
 @media (min-width: 768px) {
   .press {
-    
     display: inline-block; /* Muestra el elemento en pantallas medianas y más grandes */
   }
 }
 .Img-About {
   width: auto;          /* Deja que el ancho se ajuste automáticamente según la altura */
-  height: 50%;         /* Ajusta la altura de la imagen al 50% del contenedor */
-  max-width: 100%;     /* Evita que la imagen exceda el ancho del contenedor */
+  height: 40%;         /* Ajusta la altura de la imagen al 50% del contenedor */
+  max-width: 50%;     /* Evita que la imagen exceda el ancho del contenedor */
   object-fit: cover;   /* Asegura que la imagen cubra completamente el contenedor */
   position:fixed;  /* Posiciona la imagen de forma absoluta dentro del contenedor */
   bottom: 0;           /* Ubica la imagen en la parte inferior del contenedor */
@@ -359,13 +359,14 @@ align-items: center;
 }
 @media (max-width: 767px) {
   .Img-About {
+   
     display: none; /* Oculta el elemento en pantallas más pequeñas */
   }
 }
 .contenedor-trayectoria {
   justify-content: center;
   font-size: 1rem; /* Equivalente a text-2xl */
-  line-height: 1; /* Equivalente a leading-tight */
+  line-height: 2; /* Equivalente a leading-tight */
   text-align: center; /* Equivalente a text-center */
 }
 
@@ -379,6 +380,7 @@ align-items: center;
 
 /* ///////////////////ACA ESTA MI EXPERIENCIA  /////////////////////// */
 .Time-Id {
+  
   position: relative;
   margin-bottom: 3rem; /* Espacio entre cada contenedor */
   padding-left: 1.5rem; /* Espacio para la línea vertical */
@@ -386,10 +388,10 @@ align-items: center;
   font-size: 1.2rem;
 }
 
-  
+
 .Time-Info {
   display: flex;
-  flex-direction: column;
+  flex-direction: column ;
   align-items: flex-start;
   font-weight: 600; /* Fuente semi-negrita */
   
@@ -420,4 +422,73 @@ align-items: center;
 
 .Time-Description {
   color: #c4cedc; /* Color del texto de la descripción */
+}
+
+
+/* /////////////////////Aca comienza la pagina de services////////////////////////////////// */
+
+.circle-image-container{
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  .circle-image-container {
+    display: inline-block; /* md:inline-block */
+    position: absolute; /* md:absolute */
+  }
+}
+
+.Img-service {
+  bottom: 0;
+  left: 0;
+  display: none; /* hidden */
+}
+
+@media (min-width: 768px) {
+  .Img-service {
+    display: inline-block; /* md:inline-block */
+    position: absolute; /* md:absolute */
+  }
+}
+
+.Page-service {
+  display: grid;
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  height: 100vh; /* h-screen */
+  max-width: 80rem; /* max-w-5xl */
+  gap: 1.5rem; /* gap-6 */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+}
+
+@media (min-width: 768px) {
+  .Page-service {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+  }
+}
+.Service-Title {
+  font-size: 1.5rem; /* text-2xl */
+  line-height: 1.25; /* leading-tight */
+  text-align: center; /* text-center */
+}
+
+@media (min-width: 768px) {
+  .Service-Title {
+    text-align: left; /* md:text-left */
+    font-size: 2.25rem; /* md:text-4xl */
+    margin-bottom: 1.25rem; /* md:mb-5 */
+  }
+}
+.Service-Info {
+  font-size: 1.25rem; /* text-xl */
+  color: #e5e7eb; /* text-gray-200 */
+}
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f5741c;
 }
