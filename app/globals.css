@@ -457,15 +457,17 @@ align-items: center;
   justify-content: center;
   min-height: 100vh; /* Mantener altura mínima de la página */
   max-width: 80rem;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: 1fr; /* Columnas en pantallas pequeñas */
+  
 }
 
 /* Estructura en pantallas medianas */
 @media (min-width: 768px) {
   .Page-service {
+    
     grid-template-columns: repeat(2, minmax(0, 2fr)); /* 2 columnas en pantallas medianas y mayores */
   }
 }
@@ -473,22 +475,34 @@ align-items: center;
 /* Título del servicio */
 .Service-Title {
   font-size: 1.5rem; /* text-2xl */
-  line-height: 7; /* leading-tight */
+  line-height: 1; /* leading-tight */
   text-align: center; /* text-center */
 }
 
 @media (min-width: 768px) {
   .Service-Title {
+    
     text-align: left; /* md:text-left */
     font-size: 2rem; /* md:text-4xl */
-    margin-bottom: 1.25rem; /* md:mb-5 */
+    margin-bottom: 1rem; /* md:mb-5 */
   }
 }
 
 /* Información del servicio */
 .Service-Info {
-  font-size: 1.5rem; /* text-xl */
+  font-size: 1.2rem; /* text-xl */
   color: #e5e7eb; /* text-gray-200 */
+}
+.Service-Padre{
+  max-width: 500px; /* max-w-[500px] */
+  z-index: 10; /* z-10 */
+  margin-top: 30px; /* mt-30 */
+
+  /* Para pantallas medianas y más grandes */
+  @media (min-width: 768px) {
+ 
+    margin-top: 10px; /* md:mt-10 */
+  }
 }
 
 /* Estilos de Swiper */
@@ -496,16 +510,16 @@ align-items: center;
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #f5741c;
 }
-
 .Swiper-Contenedor {
   display: flex;
   padding: 2rem 1.5rem; /* Espaciado interno */
   height: auto;
   border-radius: 0.5rem; /* Bordes redondeados */
   cursor: pointer;
-  background-color: rgba(65, 47, 123, 0.15);
+  background-color: rgba(146, 126, 210, 0.15);
   transition: background-color 0.3s ease, border-color 0.3s ease;
   border: 2px solid transparent;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -518,12 +532,14 @@ align-items: center;
   .Swiper-Contenedor {
     flex-direction: column;
     gap: 0;
+    max-width: 50%; /* Limitar el ancho máximo al 80% en pantallas pequeñas */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
   }
 }
 
 .Swiper-Contenedor:hover {
   background-color: rgba(89, 65, 169, 0.15);
-  border-color: var(--secondary);
+  border-color:#f5741c ;
 }
 
 /* Ajustes de tamaño de Swiper */

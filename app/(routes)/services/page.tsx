@@ -7,14 +7,10 @@ import TransitionPage from "@/component/transition-pages";
 const ServicesPages = () => {
     return (
         <>
-            <TransitionPage />
-            <CoverParticles />
+        
 
-             
-            <div className="Page-service">
-             
-                <div className="max-w-[500px] z-10 mt-30 md:mt-10">
-                    
+<div className="Page-service mt-20">
+               <div className="Service-Padre">
                     <h1 className="Service-Title">Mis <span className="font-bold text-secondary"> servicios</span></h1>
                     <p className="Service-Info">Ofrezco servicios de desarrollo web frontend especializados en la creación de sitios web y aplicaciones atractivas y funcionales. Utilizando las últimas tecnologías, como HTML, CSS y JavaScript, diseño interfaces de usuario intuitivas y responsivas que reflejan la identidad de marca de mis clientes y mejoran su presencia en línea.</p>
                     <button className="px-3 py-2 rounded-lg bg-secondary opacity-75 hover:bg-secondary/95">Contacta conmigo</button>
@@ -25,6 +21,8 @@ const ServicesPages = () => {
                     <SliderServices />
                 
             </div>
+            <TransitionPage />
+            <CoverParticles />
            <AvatarServices />
            <CircleImage />
         </>
