@@ -573,6 +573,8 @@ align-items: center;
 @media (min-width: 768px) {
   .Swiper-Contenedor {
   height: 300px;
+ 
+ 
   }
 }
 
@@ -583,6 +585,7 @@ align-items: center;
     height: 200px; /* Altura más pequeña en móviles */
     max-width: 70%; /* Limitar el ancho máximo al 80% en pantallas pequeñas */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    
   }
 }
 
@@ -595,10 +598,31 @@ align-items: center;
 .Swiper-Caja {
   height: 300px;
   width: 100%;
+ 
 }
 
 @media (min-width: 768px) {
   .Swiper-Caja {
     height:340px;
   }
+}
+/* ////////////////////////Estilos de pagina portfolio//////////////////////////////// */
+
+.Avatar-p {
+  position: absolute; /* Para que el contenedor se posicione correctamente */
+  bottom: 0;         /* Ubica el contenedor en el borde inferior */
+  left: 10;          /* Ubica el contenedor en el borde izquierdo */
+  display: none;     /* Oculta el contenedor por defecto */
+}
+
+/* Estilo para dispositivos más grandes (pantallas medianas y superiores) */
+@media (min-width: 768px) {
+  .Avatar-p {
+    display: block; /* Muestra el contenedor en pantallas medianas y superiores */
+  }
+}
+
+.Avatar-p img {
+  width: 100%;    /* La imagen ocupará el ancho completo del contenedor */
+  height: auto;   /* Mantiene la proporción de la imagen */
 }

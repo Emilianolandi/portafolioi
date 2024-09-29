@@ -38,7 +38,7 @@ const Introduction = () =>{
               </p>
 
               <div className="Proyectos">
-                  <a href="/porfolio" className="Botom-P">
+                  <a href="/portfolio" className="Botom-P">
                       Ver proyectos&nbsp;
                   </a>
                   &nbsp;

@@ -31,7 +31,7 @@ const SliderServices = () => {
             {serviceData.map((item, index) => (
                 <SwiperSlide key={index}>
                     <div className="Swiper-Contenedor">
-                        <div className="mb-4 text-4xl text-secondary">{item.icon}</div>
+                        <div className="mb-4 text-4xl  text-secondary">{item.icon}</div>
                         <div>
                             <h3 className="mb-2 text-lg text-center">{item.title}</h3> {/* Alineado al centro */}
                             <p className="text-sm text-center">{item.description}</p> {/* Alineado al centro */}
