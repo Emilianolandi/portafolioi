@@ -379,50 +379,92 @@ align-items: center;
 }
 
 /* ///////////////////ACA ESTA MI EXPERIENCIA  /////////////////////// */
-.Time-Id {
-  
+/* Contenedor principal del timeline */
+/* Contenedor principal del timeline */
+.Time-Line {
+  display: flex;
+  justify-content: space-between; /* Coloca id/date a la izquierda y info a la derecha */
+  align-items: flex-start;
   position: relative;
-  margin-bottom: 3rem; /* Espacio entre cada contenedor */
-  padding-left: 1.5rem; /* Espacio para la línea vertical */
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+/* Contenedor para id y date a la izquierda */
+.Time-Id {
+  width: 50%; /* Ocupa el 50% del ancho */
+  padding-right: 1rem; /* Espacio para separar del borde */
   color: #f6faf9;
   font-size: 1.2rem;
 }
 
+.Time-Title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 
 .Time-Info {
   display: flex;
-  flex-direction: column ;
-  align-items: flex-start;
-  font-weight: 600; /* Fuente semi-negrita */
-  
-  margin-bottom: 0.5rem; /* Espacio entre la fecha y el subtítulo */
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .Time-Date {
-  
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem; /* Ancho del contenedor de la fecha */
-  height: 1.5rem; /* Altura del contenedor de la fecha */
-  background-color: #d1fae5; /* Color de fondo del contenedor de la fecha */
-  color: #10b981; /* Color del texto de la fecha */
-  font-size: 0.75rem; /* Tamaño del texto */
-  font-weight: 600; /* Fuente semi-negrita */
-  text-transform: uppercase; /* Texto en mayúsculas */
-  border-radius: 9999px; /* Bordes redondeados */
-  margin-bottom: 0.5rem; /* Espacio inferior del contenedor de la fecha */
+  font-size: 1rem;
+  background-color: #d1fae5;
+  color: #10b981;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  width: 25%;
 }
 
 .Time-Subtitle {
-  font-size: 1.5rem; /* Tamaño del texto del subtítulo */
-  font-weight: bold; /* Fuente en negrita */
-  color: #8fa1ba; /* Color del texto del subtítulo */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8fa1ba;
 }
 
+/* Contenedor de la descripción a la derecha */
 .Time-Description {
-  color: #c4cedc; /* Color del texto de la descripción */
+  width: 70%; /* Ocupa el 50% del ancho */
+  color: #c4cedc;
+  padding-left: 2rem;
+  font-size: 1.3rem;
 }
+
+/* Separador vertical */
+.Time-Line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  width: 3px;
+  background-color: #d1d5db; /* Color de la línea separadora */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .Time-Line {
+    flex-direction: column; /* Apila los elementos verticalmente en móviles */
+  }
+
+  .Time-Id,
+  .Time-Description {
+    width: 100%; /* Cada sección ocupa el 100% del ancho */
+  }
+
+  .Time-Line::before {
+    display: none; /* Oculta la línea separadora en móviles */
+  }
+}
+
+
+/* ////////////////////////////////////BOTON SERVICES //////////////////////////////
+ */
 
 
 /* /////////////////////Aca comienza la pagina de services////////////////////////////////// */
@@ -490,8 +532,9 @@ align-items: center;
 
 /* Información del servicio */
 .Service-Info {
-  font-size: 1.2rem; /* text-xl */
-  color: #e5e7eb; /* text-gray-200 */
+  font-size: 1.1rem; /* text-xl */
+  color: #fffffff6; /* text-gray-200 */
+  
 }
 .Service-Padre{
   max-width: 500px; /* max-w-[500px] */
@@ -500,7 +543,6 @@ align-items: center;
 
   /* Para pantallas medianas y más grandes */
   @media (min-width: 768px) {
- 
     margin-top: 10px; /* md:mt-10 */
   }
 }
@@ -510,6 +552,8 @@ align-items: center;
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #f5741c;
 }
+/* Ajustar la posición de los puntos de paginación */
+
 .Swiper-Contenedor {
   display: flex;
   padding: 2rem 1.5rem; /* Espaciado interno */
@@ -532,6 +576,7 @@ align-items: center;
   .Swiper-Contenedor {
     flex-direction: column;
     gap: 0;
+    height: 200px; /* Altura más pequeña en móviles */
     max-width: 50%; /* Limitar el ancho máximo al 80% en pantallas pequeñas */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
   }
@@ -544,12 +589,12 @@ align-items: center;
 
 /* Ajustes de tamaño de Swiper */
 .Swiper-Caja {
-  height: 280px;
+  height: 300px;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .Swiper-Caja {
-    height: 340px;
+    height:340px;
   }
 }
