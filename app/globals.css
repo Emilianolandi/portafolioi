@@ -415,10 +415,10 @@ align-items: center;
   font-size: 1rem;
   background-color: #d1fae5;
   color: #10b981;
-  padding: 0.5rem;
-  border-radius: 9999px;
+  padding: 1rem;
+  border-radius: 9999991px;
   text-transform: uppercase;
-  width: 25%;
+  width: 45%;
 }
 
 .Time-Subtitle {
