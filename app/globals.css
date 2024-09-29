@@ -538,7 +538,7 @@ align-items: center;
 .Service-Info {
   font-size: 1.1rem; /* text-xl */
   color: #fffffff6; /* text-gray-200 */
-  padding-left: 50px;
+  padding-left: 30px;
 }
 .Service-Padre{
   max-width: 500px; /* max-w-[500px] */
