@@ -412,13 +412,15 @@ align-items: center;
 }
 
 .Time-Date {
-  font-size: 1rem;
+  
+  font-size: 0.9rem;
   background-color: #d1fae5;
   color: #10b981;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 9999991px;
   text-transform: uppercase;
-  width: 45%;
+  max-width: 5.5rem;
+  
 }
 
 .Time-Subtitle {
@@ -498,10 +500,10 @@ align-items: center;
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Mantener altura mínima de la página */
-  max-width: 80rem;
+  max-width: 100%;
   gap: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   grid-template-columns: 1fr; /* Columnas en pantallas pequeñas */
   
 }
@@ -519,6 +521,8 @@ align-items: center;
   font-size: 1.5rem; /* text-2xl */
   line-height: 1; /* leading-tight */
   text-align: center; /* text-center */
+   padding: 10px; 
+  
 }
 
 @media (min-width: 768px) {
@@ -534,7 +538,7 @@ align-items: center;
 .Service-Info {
   font-size: 1.1rem; /* text-xl */
   color: #fffffff6; /* text-gray-200 */
-  
+  padding-left: 50px;
 }
 .Service-Padre{
   max-width: 500px; /* max-w-[500px] */
