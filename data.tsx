@@ -1,4 +1,7 @@
+import { link } from "fs";
+import { url } from "inspector";
 import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Github } from "lucide-react";
+import Link from "next/link";
 
 export const socialNetworks = [
     {
@@ -21,7 +24,8 @@ export const socialNetworks = [
     {
         id: 5,
         logo: <Twitch size={30} strokeWidth={1} />,
-        src: "https://mail.google.com/mail/u/0/#inbox?compose=new&to=EmilianoLandi.dev@gmail.com&subject=Consulta&body=Hola,%20tengo%20una%20consulta%20sobre..."
+         src: "mailto:EmilianoLandi.dev@gmail.com",
+       
     }
     
 ];
