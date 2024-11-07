@@ -619,7 +619,7 @@ align-items: center;
 }
 
 /* Estilo para dispositivos más grandes (pantallas medianas y superiores) */
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .Avatar-p {
     display: block; /* Muestra el contenedor en pantallas medianas y superiores */
   }
@@ -628,4 +628,16 @@ align-items: center;
 .Avatar-p img {
   width: 100%;    /* La imagen ocupará el ancho completo del contenedor */
   height: auto;   /* Mantiene la proporción de la imagen */
+}
+
+/* //////////////////////////////////////////////////POTFOLIO///////////////////////////////////// */
+
+.data-box {
+  padding: 1rem; /* Equivalente a p-4 */
+  border: 1px solid #e6fcf5; /* Equivalente a border-teal-50 */
+  border-radius: 0.75rem; /* Equivalente a rounded-xl */
+}
+.data-box-3 {
+  margin-bottom: 1rem; /* Equivalente a mb-4 */
+  font-size: 1.25rem; /* Equivalente a text-xl */
 }
