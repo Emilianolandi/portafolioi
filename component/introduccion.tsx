@@ -42,11 +42,11 @@ const Introduction = () =>{
                       Ver proyectos&nbsp;
                   </a>
                   &nbsp;
-                  <a href="/contact"
-                      className="Contacto-C" >
+                  <a href= "mailto:EmilianoLandi.dev@gmail.com" className="Contacto-C">
+                      
                       Contacta conmigo
                   </a>
-              </div>
+             </div>
           </div>
       </div>
   </div>
