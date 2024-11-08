@@ -6,10 +6,12 @@ import { TypeAnimation } from "react-type-animation";
 
 const Introduction = () =>{
     return(
-      <div className="Introduction">
-      
+
+        <div className="Introduction">
       <div className="Introduction-Caja">
-          <Image src="/home-4.png" priority width="600" height="600" alt="Avatar" />
+      <div className="flex justify-center items-center">
+          <Image src="/Homei.png" priority width="400" height="400" alt="Avatar" />
+          </div>
           <div className="Caja-I">
           
               <h1 className="Texto-I">Si puedes pensarlo, <br />
@@ -34,7 +36,7 @@ const Introduction = () =>{
                        
               
               <p className="Mi-Informacion">
-                  Como des  arrollador frontend y creador de contenido, me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
+              Como desarrollador front-end y back-end, me especializo en crear soluciones digitales completas, combinando diseño atractivo y funcionalidad robusta. Con mis diplomaturas en ambos campos y certificaciones, busco siempre ofrecer experiencias accesibles y eficientes para los usuarios.
               </p>
 
               <div className="Proyectos">

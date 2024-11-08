@@ -178,7 +178,7 @@ main{
   display: grid;
   align-items: center;
   height: 100;
-  padding: 1.5rem; /* Equivalente a p-6 */
+  padding: 1rem; /* Equivalente a p-6 */
   padding-top: 5rem; /* Equivalente a py-20 */
   padding-bottom: 5rem; /* Equivalente a py-20 */
   grid-template-columns: 2fr; /* Una sola columna por defecto */

@@ -13,8 +13,7 @@ export default function Home (){
       
        {/* <div className="flex min-h-[100vh] h-full bg-no-repeat bg-gradient-cover">  */}
       <CoverParticles />
-      <br />
-      <br />
+    
      <Introduction />
      {/* </div>  */}
      
