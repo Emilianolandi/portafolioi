@@ -10,7 +10,7 @@ const Introduction = () =>{
         <div className="Introduction">
       <div className="Introduction-Caja">
       <div className="flex justify-center items-center">
-          <Image src="/Homei.png" priority width="400" height="400" alt="Avatar" />
+          <Image src="/home-4.png" priority width="400" height="400" alt="Avatar" />
           </div>
           <div className="Caja-I">
           
