@@ -68,17 +68,17 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date:"Nov 2023 ",
+        title: "Desarrollador full Stack",
+        subtitle: "Universidad Tecnologica Nacional",
+        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
+        date:"Mar2024",
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date:"May 2021",
+        title: "Frontend Developer",
+        subtitle: "Universidad Tecnologica Nacional ",
+        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
+        date:"Nov 2023 ",
     },
     {
         id: 3,
@@ -167,102 +167,58 @@ export const dataPortfolio = [
     {
         id: 1,
         title: "Web Pro",
-        image: "/image-1.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 2,
         title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 3,
         title: "Estrategias Web",
-        image: "/image-3.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 4,
         title: "Ideas Creativas",
-        image: "/image-4.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 5,
         title: "Webs Impactantes",
-        image: "/image-5.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 6,
         title: "Web Dinámica",
-        image: "/image-6.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 7,
         title: "Dark Web ",
-        image: "/image-7.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 8,
         title: "E-commerce web",
-        image: "/image-8.jpg",
+        image: "",
         urlGithub: "#!",
         urlDemo: "#!",
     }
 ];
 
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile2.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
-    },
-];
