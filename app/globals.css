@@ -416,7 +416,7 @@ align-items: center;
 .Time-Date {
   
   font-size: 1rem;
-  
+  margin-left: 170px;
   color: #e9a20a;
   padding: 0.3rem;
   border-radius: 9999991px;
@@ -425,9 +425,11 @@ align-items: center;
   
 }
 
-.Time-Subtitle {
-  font-size: 1.5rem;
-  font-weight: bold;
+.Time-Subtitle {  
+  
+  margin-left: 180px;
+  font-size: 1.3rem;
+  font-weight:normal;
   color: #afccf4;
 }
 
@@ -463,6 +465,12 @@ align-items: center;
 
   .Time-Line::before {
     display: none; /* Oculta la línea separadora en móviles */
+  }
+  .Time-Date{
+    margin-left: 100px;
+  }
+  .Time-Subtitle {
+    margin-left: 100px;
   }
 }
 

@@ -69,23 +69,23 @@ export const dataAboutPage = [
     {
         id: 1,
         title: "Diplomatura en Desarrollador full Stack",
-        subtitle: "Universidad Tecnologica Nacional",
+        subtitle: "UTN",
         description: "En esta diplomatura, adquirí los conocimientos esenciales para desarrollarme como Frontend Developer, abarcando HTML5, CSS3, JavaScript y React.js. Aprendí a crear interfaces interactivas y responsivas utilizando HTML5, aprovechar las características avanzadas de CSS3 para diseño sin imágenes y a añadir interactividad con JavaScript.", 
         date:"Dic 2022",
     },
     {
         id: 2,
         title: "Desarrollo web con PHP y Wordpress",
-        subtitle: "Universidad Tecnologica Nacional ",
+        subtitle: "UTN",
         description: "En este curso, aprendí a desarrollar aplicaciones web con PHP y WordPress. Estudié variables, funciones, estructuras de control y la integración de PHP con MySQL para gestionar bases de datos. También me enfoqué en WordPress, desde su instalación y personalización hasta el uso de plugins y temas..",
         date:"Dic 2023 ",
     },
     {
         id: 3,
-        title: "Programador Web Avanzado",
-        subtitle: "Universidad Tecnologica Nacional",
+        title: " diplomatura en Desarrollor Web Avanzado",
+        subtitle: "UTN",
         description: "Formación avanzada en PHP orientado a objetos, bases de datos complejas, y desarrollo con frameworks como CodeIgniter 3, AngularJS y React.js. Adquirí experiencia en JavaScript, ES6, AJAX, y Node.js para crear aplicaciones web dinámicas y optimizadas, además de trabajar con PHP y JavaScript mediante frameworks modernos..",
-        date:"Ago 2019",
+        date:"Mar 2024",
     },
     //{
     //    id: 4,
