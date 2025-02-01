@@ -15,9 +15,9 @@ const AboutMePage = () => {
             <ContainerPage>
                 <Avatar />
                  <h1 className="contenedor-trayectoria">
-                Trayectoria {" "}
+                Mis  {" "}
                     <span className="font-bold text-secondary">
-                         Profesional
+                         Certificaciones
                     </span>
                 </h1> 
                 <br />

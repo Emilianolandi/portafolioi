@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 import { serviceData } from '@/data';
 
 const SliderServices = () => {
@@ -25,21 +25,24 @@ const SliderServices = () => {
             pagination={{
                 clickable: true,
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
             className="Swiper-Caja" // Cambiado a w-full
         >
             {serviceData.map((item, index) => (
                 <SwiperSlide key={index}>
                     <div className="Swiper-Contenedor">
-                        <div className="mb-4 text-4xl  text-secondary">{item.icon}</div>
+                        <div className="mb-10 text-4xl  text-secondary">{item.icon}</div>
                         <div>
-                            <h3 className="mb-2 text-lg text-center">{item.title}</h3> {/* Alineado al centro */}
+                            <h3 className="mb-5 text-lg text-center">{item.title}</h3> {/* Alineado al centro */}
                             <p className="text-sm text-center">{item.description}</p> {/* Alineado al centro */}
                         </div>
                     </div>
+                    <br />
                 </SwiperSlide>
             ))}
+
         </Swiper>
+        
     );
 };
 

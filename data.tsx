@@ -68,32 +68,32 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Desarrollador full Stack",
+        title: "Diplomatura en Desarrollador full Stack",
         subtitle: "Universidad Tecnologica Nacional",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date:"Mar2024",
+        description: "En esta diplomatura, adquirí los conocimientos esenciales para desarrollarme como Frontend Developer, abarcando HTML5, CSS3, JavaScript y React.js. Aprendí a crear interfaces interactivas y responsivas utilizando HTML5, aprovechar las características avanzadas de CSS3 para diseño sin imágenes y a añadir interactividad con JavaScript.", 
+        date:"Dic 2022",
     },
     {
         id: 2,
-        title: "Frontend Developer",
+        title: "Desarrollo web con PHP y Wordpress",
         subtitle: "Universidad Tecnologica Nacional ",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date:"Nov 2023 ",
+        description: "En este curso, aprendí a desarrollar aplicaciones web con PHP y WordPress. Estudié variables, funciones, estructuras de control y la integración de PHP con MySQL para gestionar bases de datos. También me enfoqué en WordPress, desde su instalación y personalización hasta el uso de plugins y temas..",
+        date:"Dic 2023 ",
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
+        title: "Programador Web Avanzado",
+        subtitle: "Universidad Tecnologica Nacional",
+        description: "Formación avanzada en PHP orientado a objetos, bases de datos complejas, y desarrollo con frameworks como CodeIgniter 3, AngularJS y React.js. Adquirí experiencia en JavaScript, ES6, AJAX, y Node.js para crear aplicaciones web dinámicas y optimizadas, además de trabajar con PHP y JavaScript mediante frameworks modernos..",
         date:"Ago 2019",
     },
-    {
-        id: 4,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date:"Ago 2019",
-    }
+    //{
+    //    id: 4,
+    //    title: "Especialista en Desarrollo Frontend",
+    //    subtitle: "CodeForge Solutions",
+    //    description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
+  //      date:"Ago 2019",
+  //  }
 //   
 //     {
 //         id: 4,

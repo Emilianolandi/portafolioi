@@ -381,6 +381,8 @@ align-items: center;
 /* ///////////////////ACA ESTA MI EXPERIENCIA  /////////////////////// */
 /* Contenedor principal del timeline */
 /* Contenedor principal del timeline */
+
+
 .Time-Line {
   display: flex;
   justify-content: space-between; /* Coloca id/date a la izquierda y info a la derecha */
@@ -413,12 +415,12 @@ align-items: center;
 
 .Time-Date {
   
-  font-size: 0.9rem;
-  background-color: #d1fae5;
-  color: #10b981;
-  padding: 0.7rem;
+  font-size: 1rem;
+  
+  color: #e9a20a;
+  padding: 0.3rem;
   border-radius: 9999991px;
-  text-transform: uppercase;
+  text-transform:capitalize;
   max-width: 5.5rem;
   
 }
@@ -426,26 +428,26 @@ align-items: center;
 .Time-Subtitle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #8fa1ba;
+  color: #afccf4;
 }
 
 /* Contenedor de la descripción a la derecha */
 .Time-Description {
   width: 70%; /* Ocupa el 50% del ancho */
-  color: #c4cedc;
+  color: #f7f9fc;
   padding-left: 2rem;
   font-size: 1.3rem;
 }
 
 /* Separador vertical */
 .Time-Line::before {
-  content: "";
+  content:icon;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 40%;
-  width: 3px;
-  background-color: #d1d5db; /* Color de la línea separadora */
+  width: 6px;
+  background-color: #f2f4f6; /* Color de la línea separadora */
 }
 
 /* Estilos para dispositivos móviles */
@@ -501,7 +503,7 @@ align-items: center;
   justify-content: center;
   min-height: 100vh; /* Mantener altura mínima de la página */
   max-width: 100%;
-  gap: 1rem;
+  gap: 0rem;
   margin-left: 20px;
   margin-right: 20px;
   grid-template-columns: 1fr; /* Columnas en pantallas pequeñas */
@@ -519,8 +521,8 @@ align-items: center;
 
 /* Título del servicio */
 .Service-Title {
-  font-size: 1.5rem; /* text-2xl */
-  line-height: 1; /* leading-tight */
+  font-size: 1rem; /* text-2xl */
+  line-height: 2; /* leading-tight */
   text-align: center; /* text-center */
   padding: 10px; 
   
@@ -530,8 +532,9 @@ align-items: center;
   .Service-Title {
     
     text-align: left; /* md:text-left */
-    font-size: 2rem; /* md:text-4xl */
-    margin-bottom: 2rem; /* md:mb-5 */
+    font-size: 3rem; /* md:text-4xl */
+    margin-bottom: 0rem; /* md:mb-5 */
+    padding-left: 30%;
   }
 }
 
@@ -549,15 +552,16 @@ align-items: center;
   
   /* Para pantallas medianas y más grandes */
   @media (min-width: 568px) {
-    margin-top: 60px; /* md:mt-10 */
+    margin-top: 20px; /* md:mt-10 */
   }
 }
 
 /* Estilos de Swiper */
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  background-color: #f5741c;
+  background-color: #faf8f6;
 }
+
 /* Ajustar la posición de los puntos de paginación */
 
 .Swiper-Contenedor {
@@ -568,32 +572,33 @@ align-items: center;
   cursor: pointer;
   background-color: rgba(146, 126, 210, 0.15);
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  border: 2px solid transparent;
+  border: 5px solid transparent;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .Swiper-Contenedor {
-  height: 300px;
- 
- 
+    height: 300px;
+    
+    
   }
 }
 
 @media (max-width: 639px) {
   .Swiper-Contenedor {
     flex-direction: column;
-    gap: 0;
-    height: 200px; /* Altura más pequeña en móviles */
+   
+    height: 250px; /* Altura más pequeña en móviles */
     max-width: 70%; /* Limitar el ancho máximo al 80% en pantallas pequeñas */
-    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    margin: -30px auto; /* Centrar el contenedor horizontalmente */
+    right: 50px;
     
   }
 }
 
 .Swiper-Contenedor:hover {
-  background-color: rgba(89, 65, 169, 0.15);
-  border-color:#f5741c ;
+  background-color: rgba(229, 238, 240, 0.15);
+  border-color:#c8d5ed ;
 }
 
 /* Ajustes de tamaño de Swiper */
@@ -606,6 +611,7 @@ align-items: center;
 @media (min-width: 768px) {
   .Swiper-Caja {
     height:340px;
+   
   }
 }
 /* ////////////////////////Estilos de pagina portfolio//////////////////////////////// */
