@@ -436,7 +436,7 @@ align-items: center;
 /* Contenedor de la descripción a la derecha */
 .Time-Description {
   width: 70%; /* Ocupa el 50% del ancho */
-  color: #f7f9fc;
+  color: #ffffff;
   padding-left: 2rem;
   font-size: 1.3rem;
 }
